@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* Estilo para o cabeçalho */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* Estilo para cada postagem */
+.post {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para as imagens */
+.post img {
+    max-width: 100%;
+}
+
+/* Estilo para a seção de comentários */
+.comments {
+    margin-top: 10px;
+}
+
+/* Estilo para a entrada de comentários e botão */
+#comment-input-1,
+#comment-input-2 {
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -3,52 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lincoln Castro</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Meu Site de Fotos</title>
 </head>
 <body>
     <header>
-        <h1>
-            Seja bem vindos ao meu primeiro projeto!
-        </h1>
-        <h2>
-            Vou postar alguns assuntos aleatorios para treinamento em linguagem web (html,css) e programação em JavaScript.
-        </h2>
+        <h1>Meu Site de Fotos</h1>
     </header>
-    <nav>
-        <a href="#">Postagens</a>
-        <a href="#">Livro de Recados</a>
-        <a href="#">Contato</a>
-    </nav>
+
     <main>
-        <div>
-            <h1>
-                Postagens
-            </h1>
-            <section>
-                <div>
-                    /imagem/
+        <section id="gallery">
+            <!-- Aqui você pode adicionar suas postagens de fotos e legendas -->
+            <div class="post">
+                <img src="fotos/7922esplanada.jpeg" alt="esplanada">
+                <p>Imagem do 7 de setembro de 2022 na Esplanada dos ministerios em Brasília-DF.</p>
+                <p>foto: BSM.</p>
+                <div class="comments">
+                    <h2>Comentários</h2>
+                    <ul id="comments-list-1">
+                        <!-- Comentários aparecerão aqui -->
+                    </ul>
+                    <input type="text" id="comment-input-1" placeholder="Deixe um comentário">
+                    <button onclick="addComment(1)">Comentar</button>
                 </div>
-            </section>
-        </div>
-        <div>
-            <h1>
-                Livro de Recados
-            </h1>
-            <section>
-                <div>
-                    /mensagens/
+            </div>
+
+            <div class="post">
+                <img src="imagem2.jpg" alt="Foto 2">
+                <p>Legenda da Foto 2</p>
+                <div class="comments">
+                    <h2>Comentários</h2>
+                    <ul id="comments-list-2">
+                        <!-- Comentários aparecerão aqui -->
+                    </ul>
+                    <input type="text" id="comment-input-2" placeholder="Deixe um comentário">
+                    <button onclick="addComment(2)">Comentar</button>
                 </div>
-            </section>
-        </div>
-        <div>
-            <h1>
-                Contatos
-            </h1>
-        </div>
+            </div>
+            <!-- Adicione mais postagens conforme necessário -->
+        </section>
     </main>
-    <footer>
-        ©2023 - Lincoln Garcez de Castro.
-    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
